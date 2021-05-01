@@ -1,0 +1,98 @@
+.chat{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(8, 173, 173);
+}
+.chat-heading{
+    background-color: rgb(8, 173, 173);
+    padding: 5px 15px;
+    color: white;
+    margin: 0;
+    margin-left: -15px;
+}
+.chat-close{
+    font-size: 1.2em;
+    background-color: white;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    right: 5px;
+    text-decoration: none;
+    font-weight: 800;
+    color: rgb(8, 173, 173);
+    border: 2px solid white;
+    transition: 0.5s;
+}
+.chat-close:hover{
+    background-color: rgb(8, 173, 173);
+    color: white;
+}
+.chat-box{
+    /* height: 50vh; */
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* padding: 6px; */
+    height: 500px;
+}
+.chat-input{
+    /* flex: 0 0 100%; */
+    padding: 10px;
+}
+.message-body{
+    float: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+}
+.message-body .message{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    background-color: #f1f0f0;
+    margin: 5px 0;
+    padding: 5px 10px;
+    border: 5px;
+    align-items: flex-start;
+    height: auto;
+    /* flex-wrap: wrap; */
+}
+.message-body .message .user{
+    /* background-color: gray;
+    padding: 5px 15px;
+    color: #f1f0f0;
+    border-radius: 25px; */
+    font-size: 20px;
+    font-weight: bold;
+}
+.message-body .message .text{
+    flex-wrap: wrap;
+    display: block;
+}
+.message-body .message.self-message{
+    background-color: rgb(8, 173, 173);
+    color: white;
+    align-items: flex-end;
+}
+.user-list{
+    border-right: 1px solid #cdcdcd;
+    text-align: center;
+    /* padding: 5px */
+}
+.user-list h5{
+    border-bottom: 4px solid rgb(8, 173, 173);
+    margin-right: -20px;
+    padding-bottom: 18px;
+}
+.single-user{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+.single-user p{
+    margin-left: 10px;
+    margin-top: -3px;
+}
